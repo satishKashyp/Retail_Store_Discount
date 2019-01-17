@@ -24,7 +24,7 @@ public class TestRetailStore {
 	
 	@Test
 	public void testCase2(){
-		Customer customer = new Customer("C2", "Name2", CustomerType.AFFALIATED, "11-11-2012");
+		Customer customer = new Customer("C2", "Name2", CustomerType.AFFILIATE, "11-11-2012");
 				
 		Cart cart = new Cart(customer, 150.0);
 		assertEquals(Double.valueOf(140.0), cart.getPaybleAmount());
@@ -56,7 +56,7 @@ public class TestRetailStore {
 	
 	@Test
 	public void testCase6(){
-		Customer customer = new Customer("C6", "Name6", CustomerType.AFFALIATED, "11-11-2017");
+		Customer customer = new Customer("C6", "Name6", CustomerType.AFFILIATE, "11-11-2017");
 				
 		Cart cart = new Cart(customer, 501.0);
 		assertEquals(Double.valueOf(451.0), cart.getPaybleAmount());

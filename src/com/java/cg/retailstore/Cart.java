@@ -41,7 +41,7 @@ public class Cart {
 				percentage=30;
 				break;
 				
-			case AFFALIATED:
+			case AFFILIATE:
 				percentage=10;
 				break;
 			case OTHER:
@@ -59,7 +59,7 @@ public class Cart {
 	   }
 	   
 	   
-	   private static Double calAmount(Double amount, int precentage){
+	   private Double calAmount(Double amount, int precentage){
 			return amount-Math.floor(amount/100)*precentage;
 		}
 		
